@@ -1,0 +1,110 @@
+/* wrapper dla inputa kalendarza */
+.input-calendar-cnt {
+    position: relative;
+    display: inline-flex;
+    width: 90%;
+}
+
+/* kalendarz */
+.calendar {
+    position: absolute;
+    top:100%;
+    left:0;
+    width: 100%;
+    background: #fff5ff;
+    min-height: 300px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    box-shadow:2px 2px 1px rgba(0,0,0,0.1);
+    font-family: sans-serif;
+    display: block;
+    z-index: 100;
+    opacity: 0;
+    transition: 0.4s opacity;
+    pointer-events: none;
+    opacity: 1;
+    pointer-events: all;
+
+}
+
+.calendar-prev-next {
+    height:30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #e8d8ff;
+}
+.calendar .input-prev,
+.calendar .input-next {
+    position: relative;
+    z-index: 1;
+    cursor:pointer;
+    width: 30px;
+    font-family: sans-serif;
+    background-color: transparent;
+    border:0;
+    color: #333;
+}
+.calendar .input-prev:hover,
+.calendar .input-next:hover {
+    background:#e6e6fa;
+}
+
+.calendar .date-name {
+    font-size:20px;
+    color: #000000;
+    padding: 0 40px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.calendar .calendar-header {
+    height:30px;
+    position: relative;
+}
+.calendar .calendar-table-cnt {
+    position: relative;
+    padding-top:10px;
+}
+.calendar .calendar-table {
+    font-size:12px;
+    color: #172700;
+    width: 100%;
+}
+.calendar .calendar-table td {
+    text-align: center;
+    width:14.2857%;
+}
+.calendar .calendar-table th {
+    font-family: sans-serif;
+    font-weight: normal;
+    padding-bottom: 10px;
+    font-size:11px;
+    color:#000000;
+}
+.calendar .calendar-table td.day {
+    background: #e4becf;
+    height:40px;
+    font-size:11px;
+    font-family: sans-serif;
+    font-weight:bold;
+}
+.calendar .calendar-table td.day:hover {
+    background: #D1EBFD;
+    cursor: pointer
+}
+.calendar .calendar-table td.current-day {
+    background-color: #F15C5C;
+    color:#fff;
+}
+.calendar .calendar-table td.current-day:hover {
+    background-color: #DE5858;
+}
+
+

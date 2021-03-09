@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    
+    <link rel="stylesheet" href="projekt2.css">
+
+    <script type="text/javascript" src="kalendarz.js"> </script>
+    <link rel="stylesheet" href="kalendarz.css">
+
+    <script type="text/javascript" src="rezerwacja.js"> </script>
+    <meta charset="UTF-8">
+    <title>Fryzjer</title>
+
+    <meta name="description" content="Zakład usług fryzjerskich" />
+    <meta name="author" content="Nazwa Firmy, Miejscowość" />
+    <meta name="keywords" content="fryzjer, damski, włos, strzyżenie" />
+    <meta name="robots" content="none" />
+
+</head>
+
+<body>
+    <p>
+    <h1>ZAKŁAD USŁUG FRYZJERSKICH</h1>
+    </p>
+    <div id="logo">
+    <img src="logo.jpg">
+    </div>
+
+    <div id="newReservation" style="display: none;">
+        <form>
+            <label for="text">Formularz rezerwacji</label><br><br>
+
+            <label for="name">Imię i nazwisko klienta</label><br>
+            <input type="text" id="name" name="name" ><br>
+            <label id="reservationLabel">Dostępne terminy w dniu </label><br>
+            <select id="selectHours"></select> <br>
+
+
+            <input type="submit" value="Zatwierdź" onclick="submitReservation()">
+            <input type="submit" value="Anuluj">
+        </form>
+    </div>
+    <div id="message"></div>
+    <div id="calendar"></div>
+
+
+</body>
+<script type="text/javascript" src="projekt2.js"> </script>
+</html>
